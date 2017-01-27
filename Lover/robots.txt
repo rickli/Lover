@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://rickli.github.io/Lover/sitemap.xml 
