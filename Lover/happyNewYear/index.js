@@ -146,7 +146,7 @@ function initPage() {
     // 雪花文字点
     function getWords() {
         // 名字
-        var name = '娄珊';
+        var name = '李娟妮';
         ctx.save();
         ctx.fillStyle = "#eee";
         ctx.font = '75px ooxx';
@@ -157,10 +157,10 @@ function initPage() {
         ctx.save();
         ctx.fillStyle = "#eee";
         ctx.font = '90px ooxx';
-        ctx.fillText('新', (canvasWidth - 90 * 4) / 2, canvasHeight / 2 + 10);
-        ctx.fillText('年', (canvasWidth - 90 * 4) / 2 + 90, canvasHeight / 2 + 25)
-        ctx.fillText('快', (canvasWidth - 90 * 4) / 2 + 180, canvasHeight / 2 + 10)
-        ctx.fillText('乐', (canvasWidth - 90 * 4) / 2 + 270, canvasHeight / 2 + 25)
+        ctx.fillText('宝', (canvasWidth - 90 * 4) / 2, canvasHeight / 2 + 10);
+        ctx.fillText('宝', (canvasWidth - 90 * 4) / 2 + 90, canvasHeight / 2 + 25)
+        ctx.fillText('爱', (canvasWidth - 90 * 4) / 2 + 180, canvasHeight / 2 + 10)
+        ctx.fillText('你', (canvasWidth - 90 * 4) / 2 + 270, canvasHeight / 2 + 25)
         ctx.restore();
 
         // 获取原始点坐标，色值
