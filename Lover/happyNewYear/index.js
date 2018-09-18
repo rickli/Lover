@@ -30,7 +30,7 @@ function initPage() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         // 背景
         ctx.save();
-        ctx.fillStyle = '#000';
+        ctx.fillStyle = '#111';
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
         initSnow();
