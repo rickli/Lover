@@ -14,7 +14,7 @@ function initPage() {
     var ctx = myCanvas.getContext('2d');
     //画布渐变
     var gradient = ctx.createLinearGradient(200, 480, 320, 480);
-    gradient.addColorStop(0, "#FF0000");
+    gradient.addColorStop(0.25, "#FF0000");
     gradient.addColorStop(0.5, "#FF8000");
     gradient.addColorStop(0.75, "#FFFF00");
     gradient.addColorStop(1, "#7F00FF");
@@ -30,7 +30,7 @@ function initPage() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         // 背景
         ctx.save();
-        ctx.fillStyle = '#111';
+        ctx.fillStyle = '#FFFFFF';
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
         initSnow();
@@ -225,7 +225,7 @@ function initPage() {
         return points;
     }
     function StarPixel(x, y, endx, endy, color) {
-        var colors = ['#FF0000', '#FF8000', '#FFFF00', '#7F00FF','#FF0000'];
+        var colors = ['#FF6364', '#FF8000', '#F29A00', '#7F00FF','#FF0000'];
         // 起点
         this.x = x;
         this.y = y;
