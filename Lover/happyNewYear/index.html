@@ -15,7 +15,29 @@
         <img src="snow-222.png" id="snow2">
         <img src="snow-333.png" id="snow3">
     </div>
-    <audio src="demo11.mp3" autoplay="true" loop="true" hidden="true"></audio>
+    <audio src="demo11.mp3" autoplay loop id="audiojs"></audio>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audiojs');
+                audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+    });
+    
+    if (/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
+    $(document).one('touchstart',
+        function(e) {
+            $('#audiojs').get(0).touchstart = true;
+            $('#audiojs').get(0).play();
+            return false;
+        });
+    }
+    </script>
+    <!-- <audio src="demo11.mp3" autoplay="true" loop="true" hidden="true"></audio> -->
     <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="index.js"></script>
 </body>
