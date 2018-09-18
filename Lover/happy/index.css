@@ -1,0 +1,11 @@
+html,body,canvas{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+canvas{
+    max-width: 100%;
+}
+.img-list{
+    display: none;
+}
