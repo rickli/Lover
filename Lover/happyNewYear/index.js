@@ -30,7 +30,7 @@ function initPage() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         // 背景
         ctx.save();
-        ctx.fillStyle = '#FFFFFF';
+        ctx.fillStyle = '#000';
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
         initSnow();
@@ -105,7 +105,7 @@ function initPage() {
     // 流星文字动画
     function initStar() {
         ctx.save();
-        var words = ['by', '', '李', '江', '鹏'];
+        var words = ['B', 'y', '李', '江', '鹏'];
         for (var i = 0; i < 5; i++) {
             var point = starPoints[i];
             var x = point.x;
@@ -146,17 +146,17 @@ function initPage() {
     // 雪花文字点
     function getWords() {
         // 名字
-        var name = '李娟妮';
+        var name = '蔡爱凤';
         ctx.save();
-        ctx.fillStyle = "#eee";
-        ctx.font = '75px ooxx';
+        ctx.fillStyle = "#fff";
+        ctx.font = '100px ooxx';
         ctx.fillText(name, (canvasWidth - 75 * name.length) / 2, canvasHeight / 2 - 100);
         ctx.restore();
 
         // 祝福语
         ctx.save();
-        ctx.fillStyle = "#eee";
-        ctx.font = '90px ooxx';
+        ctx.fillStyle = "#fff";
+        ctx.font = '120px ooxx';
         ctx.fillText('宝', (canvasWidth - 90 * 4) / 2, canvasHeight / 2 + 10);
         ctx.fillText('宝', (canvasWidth - 90 * 4) / 2 + 90, canvasHeight / 2 + 25)
         ctx.fillText('爱', (canvasWidth - 90 * 4) / 2 + 180, canvasHeight / 2 + 10)
@@ -225,7 +225,7 @@ function initPage() {
         return points;
     }
     function StarPixel(x, y, endx, endy, color) {
-        var colors = ['#FF6364', '#FF8000', '#F29A00', '#7F00FF','#FF0000'];
+        var colors = ['#FF6364', '#FF8000', '#87E0FF', '#53C7F0','#1D97C1'];
         // 起点
         this.x = x;
         this.y = y;
